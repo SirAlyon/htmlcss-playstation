@@ -6,8 +6,32 @@ body{
     font-family: 'Arial', sans-serif;
 }
 
+img{
+    max-width: 100%;
+}
+
+
 /* #region Utility*/
 
+.rounded_4{
+    border-radius: 25px;
+}
+
+.borders {
+    border: 3px solid white;
+    outline: 4px solid rgba(68, 151, 219, 1);
+}
+
+.borders:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #ff1414;
+}
 
 /* #endregion */
 
@@ -23,10 +47,11 @@ body{
 
 .jumbotron{
     background-image: url(../img/jumbo-bg.png);
-    height: 650px;
+    height: 800px;
     background-position: center;
     background-size: cover;
 }
+
 
 /* #endregion */
 
@@ -37,9 +62,13 @@ body{
 
 /* #endregion */
 
+/* #region Media Query */
 
 @media screen and (min-width: 768px) {
     .jumbotron p{
         width: 40%;
     }
 }
+
+
+/* #endregion */
