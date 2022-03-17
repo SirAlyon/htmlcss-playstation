@@ -2,8 +2,11 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 
-/* #region Utility*/
+body{
+    font-family: 'Arial', sans-serif;
+}
 
+/* #region Utility*/
 
 
 /* #endregion */
@@ -18,7 +21,12 @@
 
 /* #region Main */
 
-
+.jumbotron{
+    background-image: url(../img/jumbo-bg.png);
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+}
 
 /* #endregion */
 
@@ -28,3 +36,10 @@
 
 
 /* #endregion */
+
+
+@media screen and (min-width: 768px) {
+    .jumbotron p{
+        width: 40%;
+    }
+}
