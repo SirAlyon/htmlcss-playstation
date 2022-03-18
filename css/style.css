@@ -52,6 +52,12 @@ img{
     background-size: cover;
 }
 
+.jumbotron-second{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    height: 630px;
+    background-position: center;
+    background-size: cover;
+}
 
 /* #endregion */
 
@@ -67,6 +73,29 @@ img{
 @media screen and (min-width: 768px) {
     .jumbotron p{
         width: 40%;
+    }
+
+    .jumbotron-second p,
+    .jumbotron-second h3{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    .it-takes-two>img{
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hardwares>span{
+        display: none;
+    }
+
+    .hardwares>img{
+        height: 80px;
     }
 }
 
