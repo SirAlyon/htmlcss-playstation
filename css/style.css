@@ -13,6 +13,11 @@ img{
 
 /* #region Utility*/
 
+:root{
+    --ps5-secondary: rgba(190, 188, 187, 1);
+    --ps5-dark: rgba(31, 31, 31, 1);
+}
+
 .rounded_4{
     border-radius: 25px;
 }
@@ -32,6 +37,21 @@ img{
     bottom: 5px;
     border: 5px solid #ff1414;
 }
+
+.mt_n5{
+    margin-top: -3rem;
+}
+
+.bg_lightgray{
+    background-color: rgba(217, 218, 220, 1);
+}
+
+.bg_ps5_secondary{
+    background-color: var(--ps5-secondary);
+}
+
+
+
 
 /* #endregion */
 
@@ -59,6 +79,12 @@ img{
     background-size: cover;
 }
 
+#ps-plus{
+    width: 500px;
+    height: auto;
+}
+
+
 /* #endregion */
 
 
@@ -83,9 +109,15 @@ img{
 }
 
 @media screen and (max-width: 767px) {
-    
     .it-takes-two>img{
         height: 220px;
+    }
+
+    .explore .card-body{
+        margin-top: -3rem;
+    }
+    .ps-plus .col-12:nth-child(2){
+        display: none;
     }
 }
 
@@ -94,10 +126,13 @@ img{
         display: none;
     }
 
-    .hardwares>img{
+    /* .hardwares>img{
         height: 80px;
-    }
+    } */ 
+
 }
+    
+
 
 
 /* #endregion */
