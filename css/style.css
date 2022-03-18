@@ -16,6 +16,8 @@ img{
 :root{
     --ps5-secondary: rgba(190, 188, 187, 1);
     --ps5-dark: rgba(31, 31, 31, 1);
+    --ps5-dark-blue: rgba(22, 28, 59, 1);
+    --ps5-footer: rgba(0, 67, 156, 1);
 }
 
 .rounded_4{
@@ -48,6 +50,14 @@ img{
 
 .bg_ps5_secondary{
     background-color: var(--ps5-secondary);
+}
+
+.bg_ps5_dark-blue{
+    background-color: var(--ps5-dark-blue);
+}
+
+.bg_ps5_footer{
+    background-color: var(--ps5-footer);
 }
 
 
@@ -85,12 +95,21 @@ img{
 }
 
 
+.socials{
+    
+    aspect-ratio: 1 / 1;
+}
+
 /* #endregion */
 
 
 /* #region Footer */
 
-
+#site_footer ul>li{
+    color: white;
+    list-style: none;
+    margin-top: 0.5rem;
+}
 
 /* #endregion */
 
@@ -116,16 +135,18 @@ img{
     .explore .card-body{
         margin-top: -3rem;
     }
+    
     .ps-plus .col-12:nth-child(2){
-        display: none;
-    }
+            display: none;
+        }
+    
 }
 
 @media screen and (max-width: 576px) {
     .hardwares>span{
         display: none;
     }
-
+   
     /* .hardwares>img{
         height: 80px;
     } */ 
