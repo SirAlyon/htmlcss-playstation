@@ -62,17 +62,12 @@ img{
 .btn .bg_lightgray:hover{
     outline: 2px solid rgb(0, 0, 0);
     outline-offset: -5px;
-    transition: linear 0.2s;
 }
 
 .btn-primary:hover{
     outline: 2px solid rgba(0, 0, 0, 0.5);
     outline-offset: 2px;
     transition: ease-in-out 0.2s;
-}
-
-.hardwares>img:hover{
-    opacity: 1!important;
 }
 
 .dropdown-item:focus, 
@@ -83,6 +78,10 @@ img{
 }
 
 /* Explore PS4 Effects */
+.plays-5 .col:hover img{
+    opacity: 1!important;
+}
+
 .plays-5 .col{
     position: relative;
 } 
@@ -124,6 +123,12 @@ img{
     border-radius: 40px;
 }
   
+/* Footer Effects */
+
+#site_footer ul>li>a:hover{
+    text-decoration: underline;
+}
+
 /* #endregion */
 
 /* #region Header */
@@ -193,10 +198,14 @@ img{
 
 /* #region Footer */
 
-#site_footer ul>li{
+#site_footer ul>li>a{
     color: white;
-    list-style: none;
+    text-decoration: none;
     margin-top: 0.5rem;
+}
+
+#site_footer ul{
+    list-style: none;
 }
 
 /* #endregion */
@@ -226,8 +235,19 @@ img{
     
     .ps-plus .col-12:nth-child(2){
             display: none;
-        }
+    }
     
+    .c-des{
+        text-align: center;
+    }
+
+    .explore .card-text{
+        min-height: auto;
+    }
+
+    .jumbotron-cards .card>img:hover{
+        transform: translateY(-10px);
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -237,6 +257,10 @@ img{
 
     .jumbotron-cards .card>img:hover{
         transform: none;
+    }
+
+    .plays-5 .col::after{
+        bottom: -10px;
     }
    
     /* .hardwares>img{
@@ -251,7 +275,7 @@ img{
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 840px) and (max-width: 767px){
     .explore .card-text{
         min-height: 48px;
     }
