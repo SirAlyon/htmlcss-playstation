@@ -24,13 +24,13 @@
 
                     <!-- Nav-Bar Left -->
                   <a class="navbar-brand" href="#">
-                      <img src="./img/play_logo.svg" alt="">
+                      <img style="min-width: 50px" src="./img/play_logo.svg" alt="">
                   </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Giochi
@@ -111,7 +111,7 @@
                     </ul>
 
                     <!-- Nav-Bar Right -->
-                    <ul class="navbar-nav fw-bold">
+                    <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               My PlayStation
@@ -140,7 +140,9 @@
 
 
     <main id="site_main">
-        <div class="jumbotron">
+
+      <!-- Jumbotron section -->
+          <section class="jumbotron">
             <div class="container-xxl h-100 px-4 text-white d-flex flex-column justify-content-end">
                 <div class="returnal">
                     <img height="40px" src="./img/returnal-hero-banner-logo.png" alt="">
@@ -151,15 +153,15 @@
                     <button type="button" class="btn btn-danger rounded-pill">Acquista ora</button>
                 </span> 
             </div>
-        </div>
+          </section>
 
-            <!-- Cards section -->
-            <section>
+          <!-- Cards section -->
+          <section>
                 <div class="container-xxl px-4 my-5">
                     <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 gy-3">
                         <div class="col">
                             <div class="card rounded_4">
-                                <img class="rounded_4 borders borders:before" src="./img/returnal-listing-thumb-01-ps5.jpg" alt="">
+                                <img class="rounded_4 borders" src="./img/returnal-listing-thumb-01-ps5.jpg" alt="">
                             </div>
                         </div>
                         <div class="col">
@@ -189,18 +191,18 @@
                         </div>
                     </div>
                 </div>
-            </section>
+          </section>
 
-            <!-- Here PlayStation 5 section-->
-            <section class="py-5 text-center">
+          <!-- Here PlayStation 5 section-->
+          <section class="py-5 text-center">
                 <span class="text-uppercase text-primary">PLAY HAS NO LIMITS</span>
                 <h3 class="mt-1 mb-4 fs-1">Ecco la PlayStation 5</h3>
                 <span class="text-secondary fs-3">Tuffati in nuove possibilità di gioco completamente inaspettate</span>
-            </section>
+          </section>
 
 
-            <!-- Console PlayStation 5 section -->
-            <section class="mt-sm-5">
+          <!-- Console PlayStation 5 section -->
+          <section class="ps-5 mt-sm-5">
                 <div class="container-xxl px-5">
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -218,7 +220,7 @@
                     </div>
 
                     <div class="row row-cols-3 row-cols-sm-3 row-cols-md-5 gy-5 my-xl-4 pb-5">
-                        <div class="col border-bottom border-2 border-primary">
+                        <div class="col">
                             <div class="hardwares d-flex flex-column align-items-center">
                                 <img class="w-100" src="./img/playstation-5-thumb.png" alt="">
                                 <span class="fs-5 my-2 px-2 text-center">Console PS5</span>
@@ -226,34 +228,34 @@
                         </div>
                         <div class="col">
                             <div class="hardwares d-flex flex-column align-items-center">
-                                <img  class="w-100" src="./img/remote-thumb.png" alt="">
+                                <img  class="w-100 opacity-50" src="./img/remote-thumb.png" alt="">
                                 <span class="fs-5 my-2 px-2 text-center">Telecomando Media</span>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col border-2">
                             <div class="hardwares d-flex flex-column align-items-center text-center">
-                                <img  class="w-100" src="./img/headset-thumb.png" alt="">
+                                <img  class="w-100 opacity-50" src="./img/headset-thumb.png" alt="">
                                 <span class="fs-5 my-2 text-center">Cuffie wireless con microfono PULSE 3</span>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col border-2">
                             <div class="hardwares d-flex flex-column align-items-center">
-                                <img class="w-100" src="./img/joypad-thumb.png" alt="">
+                                <img class="w-100 opacity-50" src="./img/joypad-thumb.png" alt="">
                                 <span class="fs-5 my-2 px-2 text-center">Controller wireless DualSense</span>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col border-2">
                             <div class="hardwares d-flex flex-column align-items-center">
-                                <img class="w-100" src="./img/camera-thumb.jpg" alt="">
+                                <img class="w-100 opacity-50" src="./img/camera-thumb.jpg" alt="">
                                 <span class="fs-5 my-2 px-2 text-center">Telecamera HD</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+          </section>
 
-            <!-- It takes two section -->
-            <section>
+          <!-- It takes two section -->
+          <section>
               <div class="jumbotron-second">
                 <div class="container-xxl h-100 px-4 text-white d-flex flex-column justify-content-end">
                     <div class="it-takes-two">
@@ -265,10 +267,11 @@
                         <button type="button" class="btn btn-danger rounded-pill">Acquista ora</button>
                     </span> 
                 </div>
-            </section>
+              </div>
+          </section>
         
-            <!-- New Release section -->
-            <section class="bg-dark pt-2 pb-4">
+          <!-- New Release section -->
+          <section class="bg-dark pt-2 pb-4">
               <div class="container-xxl px-4 text-white">
                 <h5 class="fs-3 pt-3">Nuove uscite</h5>
                 <span>Giochi incredibili per PS4 e PS5 disponibili ora</span>
@@ -347,10 +350,10 @@
                   </div>
                 </div>
               </div>
-            </section>
+          </section>
 
-            <!-- Explore PlayStation 5 section -->
-            <section class="explore pb-5">
+          <!-- Explore PlayStation 5 section -->
+          <section class="explore pb-5">
                 <div class="container-xxl px-4">
                   <h3 class="mt-5 mb-4 fs-1 text-center">Esplora PlayStation 4</h3>
                   <p class="text-center">Giochi incredibili e intrattenimento senza fine. <br> Non c'è mai stato un momento migliore per giocare sulla tua PS4.</p>
@@ -358,8 +361,8 @@
                     <div class="col">
                       <div class="card border-0">
                         <img src="./img/ps4-slim-homepage-image-block.jpg" class="card-img-top" alt="...">
-                        <div class="card-body px-0">
-                          <h5 class="card-title fs-3 mb-3 mt-sm-0">PlayStation 4</h5>
+                        <div class="card-body px-0 mt-sm-0">
+                          <h5 class="card-title fs-3 mb-3 ">PlayStation 4</h5>
                           <p class="card-text">Giochi incredibili live su PS4, con 1TB di spazio di archiviazione.</p>
                           <span>
                             <a href="#" class="btn btn-primary rounded-pill">Scopri di più</a>
@@ -382,7 +385,7 @@
                     <div class="col">
                       <div class="card border-0">
                         <img src="./img/dualshock-4-listing-thumb.jpg" class="card-img-top" alt="...">
-                        <div class="card-body px-0">
+                        <div class="card-body px-0 mt-sm-0">
                           <h5 class="card-title fs-3 mb-3">Accessori</h5>
                           <p class="card-text">Migliora la tua esperienza PS4 con una gamma di accessori ufficiali.</p>
                           <span>
@@ -393,10 +396,10 @@
                     </div>
                   </div>
                 </div>
-            </section>
+          </section>
 
-            <!-- PlayStation Plus section -->
-            <section class="bg_ps5_secondary ps-plus py-5 py-md-0">
+          <!-- PlayStation Plus section -->
+          <section class="bg_ps5_secondary ps-plus py-5 py-md-0">
               <div class="container-xxl px-4">
                 <div class="row">
                   <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
@@ -411,11 +414,11 @@
                   </div>
                 </div>
               </div>
-            </section>
+          </section>
 
 
-            <!-- Discounts section -->
-            <section class="pb-5">
+          <!-- Discounts section -->
+          <section class="pb-5">
               <div class="containerxxl px-4">
                 <h3 class="mt-5 mb-4 fs-1 text-center">Nuovi sconti sul PlayStation Store</h3>
                 <p class="text-center text-secondary fs-4">Sconti pazzeschi, collezioni curate e saldi stagionali su PS5, PS4 e PS VR, tutti in un unico post.</p>
@@ -437,11 +440,11 @@
                   </div>
                 </div>
               </div>
-            </section>
+          </section>
 
 
-            <!-- PlayStation Now section -->
-            <section class="bg_ps5_dark-blue ps-plus py-5 py-md-0">
+          <!-- PlayStation Now section -->
+          <section class="bg_ps5_dark-blue ps-plus py-5 py-md-0">
               <div class="container-xxl px-4">
                 <div class="row">
                   <div class="col-12 col-md-6 d-flex flex-column justify-content-between justify-content-md-center">
@@ -456,37 +459,38 @@
                   </div>
                 </div>
               </div>
-            </section>
+          </section>
 
 
-            <!-- Socials section -->
-            <section>
+          <!-- Socials section -->
+          <section>
               <div class="container-xxl px-4">
                 <h4 class="mt-5 mb-3 fs-1 text-center">Seguici sui social media</h4>
                 <div class="row justify-content-center py-5 gy-4">
-                  <div class="col-sm-6 col-md-2 ">
+                  <div class="col-6 col-md-2 ">
                     <a href="">
                       <img src="./img/facebook.jpg" class="socials" alt="">
                     </a>
                   </div>
-                  <div class="col-sm-6 col-md-2">
+                  <div class="col-6 col-md-2">
                     <a href="">
                       <img src="./img/instagram.jpg" class="socials" alt="">
                     </a>
                   </div>
-                  <div class="col-md-2 col-sm-6">
+                  <div class="col-6 col-md-2">
                     <a href="">
                       <img src="./img/twitter.jpg" class="socials" alt="">
                     </a>
                   </div>
-                  <div class="col-md-2 col-sm-6 pb-5">
+                  <div class="col-6 col-md-2  pb-5">
                     <a href="">
                       <img src="./img/youtube.png" class="socials" alt="">
                     </a>
                   </div>
                 </div>
               </div>
-            </section>
+          </section>
+
     </main>
     <!-- /#site_main -->
 

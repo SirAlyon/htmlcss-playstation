@@ -21,27 +21,20 @@ img{
 }
 
 .rounded_4{
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
-.borders {
+.borders{
     border: 3px solid white;
     outline: 4px solid rgba(68, 151, 219, 1);
 }
 
-.borders:before {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border: 5px solid #ff1414;
-}
-
 .mt_n5{
     margin-top: -3rem;
+}
+
+.mb_custom-1{
+    margin-bottom: -2px;
 }
 
 .bg_lightgray{
@@ -60,16 +53,63 @@ img{
     background-color: var(--ps5-footer);
 }
 
+/* #endregion */
 
+/* #region Hover Effects */
+
+/* .btn:hover{
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: -5px;
+} */
+
+.btn-primary:hover{
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: 2px;
+}
+
+.hardwares>img:hover{
+    opacity: 1!important;
+}
+
+.ps-5 .col{
+    position: relative;
+} 
+
+.ps-5 .col:first-child::after{
+    display: block;
+}
+
+.ps-5 .col::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    height: 2px;
+    width: 70%;
+    border-bottom: 2px solid #0d6efd !important;
+    display: none;
+}
+
+.ps-5 .col:hover::after{
+    display: block;
+}
 
 
 /* #endregion */
 
-
 /* #region Header */
-
-
-
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+.dropdown-toggle::after {
+    border: none;
+    font: var(--fa-font-solid);
+    content: "\f107";
+}
+.dropdown-toggle.show::after {
+    content: "\f106";
+}
 /* #endregion */
 
 
@@ -94,9 +134,7 @@ img{
     height: auto;
 }
 
-
 .socials{
-    
     aspect-ratio: 1 / 1;
 }
 
@@ -150,10 +188,14 @@ img{
     /* .hardwares>img{
         height: 80px;
     } */ 
-
 }
     
-
+@media screen and (min-width: 993px) and (max-width: 1010px){
+    #site_header .nav-item>.btn{
+        margin-right: 0.5rem !important;
+        margin-left: 0.5rem !important;
+    }
+}
 
 
 /* #endregion */
