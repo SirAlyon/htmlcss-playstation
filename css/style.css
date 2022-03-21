@@ -98,18 +98,35 @@ img{
 /* #endregion */
 
 /* #region Header */
+
+/* Arrow Nav-bar Items */
 .dropdown-toggle {
     display: flex;
     align-items: center;
 }
+
 .dropdown-toggle::after {
     border: none;
     font: var(--fa-font-solid);
     content: "\f107";
 }
+
 .dropdown-toggle.show::after {
     content: "\f106";
 }
+
+/* Cambio Position dropdown */
+.dropdown, .dropend, .dropstart, .dropup{
+    position: unset;
+}
+.dropdown-menu[data-bs-popper]{
+    width: 100vw;
+    left: 0;
+    margin-top: .125rem;
+    top: 90%;
+    border: 1px solid white;
+}
+
 /* #endregion */
 
 
