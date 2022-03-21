@@ -57,29 +57,41 @@ img{
 
 /* #region Hover Effects */
 
-/* .btn:hover{
+.btn-danger:hover,
+.btn-light:hover,
+.btn .bg_lightgray:hover{
     outline: 2px solid rgb(0, 0, 0);
     outline-offset: -5px;
-} */
+    transition: linear 0.2s;
+}
 
 .btn-primary:hover{
-    outline: 2px solid rgb(0, 0, 0);
+    outline: 2px solid rgba(0, 0, 0, 0.5);
     outline-offset: 2px;
+    transition: ease-in-out 0.2s;
 }
 
 .hardwares>img:hover{
     opacity: 1!important;
 }
 
-.ps-5 .col{
+.dropdown-item:focus, 
+.dropdown-item:hover{
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Explore PS4 Effects */
+.plays-5 .col{
     position: relative;
 } 
 
-.ps-5 .col:first-child::after{
+.plays-5 .col:first-child::after{
     display: block;
 }
 
-.ps-5 .col::after{
+.plays-5 .col::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -90,11 +102,28 @@ img{
     display: none;
 }
 
-.ps-5 .col:hover::after{
+.plays-5 .col:hover::after{
     display: block;
 }
 
+.jumbotron-cards .card>img{
+    transition: ease-in-out 0.7s;
+}
 
+.jumbotron-cards .card>img:hover{
+    transform: translateY(-20px);
+}
+
+/* Socials Effects */
+
+.socials{
+    transition: linear 0.3s;
+}
+
+.socials:hover{
+    border-radius: 40px;
+}
+  
 /* #endregion */
 
 /* #region Header */
@@ -144,6 +173,10 @@ img{
     height: 630px;
     background-position: center;
     background-size: cover;
+}
+
+.explore .card-text{
+    min-height: 72px;
 }
 
 #ps-plus{
@@ -201,6 +234,10 @@ img{
     .hardwares>span{
         display: none;
     }
+
+    .jumbotron-cards .card>img:hover{
+        transform: none;
+    }
    
     /* .hardwares>img{
         height: 80px;
@@ -211,6 +248,12 @@ img{
     #site_header .nav-item>.btn{
         margin-right: 0.5rem !important;
         margin-left: 0.5rem !important;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .explore .card-text{
+        min-height: 48px;
     }
 }
 
